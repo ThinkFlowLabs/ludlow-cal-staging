@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Ludlow Blog Calendars 2026 | Multi-brand hub</title>
+<!-- refreshed 2026-10-20: Oct20 8/8 Published (STR/PM + VAS retail + Parachute garage); Big Sky/Delta unchanged; VAS Sep22 HOLD; Delta HOLD -->
+<meta name="description" content="Switchable 2026 blog content calendars for Ludlow Property Group brands. True brand isolation via iframe."/>
+<style>
+
+:root {
+  --hub:#0a0a0a; --pill-on:#ff5a1f; --bg:#f4f4f1;
+}
+* { box-sizing:border-box; }
+html, body { margin:0; padding:0; background:var(--bg);
+  font-family:Inter,"Segoe UI",system-ui,sans-serif; color:#111; }
+.hub-bar {
+  position:sticky; top:0; z-index:100;
+  background:rgba(10,10,10,0.94); color:#fff;
+  backdrop-filter:saturate(140%) blur(10px);
+  border-bottom:1px solid #222;
+  padding:12px 16px 14px;
+}
+.hub-bar-inner {
+  max-width:1180px; margin:0 auto;
+  display:flex; flex-direction:column; gap:10px;
+}
+.hub-meta {
+  display:flex; justify-content:space-between; align-items:baseline;
+  gap:12px; flex-wrap:wrap;
+}
+.hub-title { font-weight:800; letter-spacing:-0.02em; font-size:1.05rem; }
+.hub-sub { font-size:0.78rem; opacity:0.7; text-transform:uppercase; letter-spacing:0.08em; }
+.brand-switcher {
+  display:flex; flex-wrap:wrap; gap:8px;
+  padding:4px; background:#1a1a1a; border-radius:999px;
+}
+.brand-pill {
+  appearance:none; border:0; cursor:pointer;
+  background:transparent; color:#ddd;
+  font:inherit; font-size:0.82rem; font-weight:700;
+  padding:8px 14px; border-radius:999px;
+  transition:background .15s ease, color .15s ease;
+}
+.brand-pill:hover { background:#2a2a2a; color:#fff; }
+.brand-pill[aria-pressed="true"] { background:var(--pill-on); color:#fff; }
+.brand-pill:focus-visible { outline:2px solid #fff; outline-offset:2px; }
+#brand-frame {
+  display:block; width:100%; border:0; min-height:100vh;
+  background:#f4f4f1;
+}
+
+</style>
+</head>
+<body>
+  <header class="hub-bar">
+    <div class="hub-bar-inner">
+      <div class="hub-meta">
+        <div class="hub-title">Ludlow blog calendars · 2026</div>
+        <div class="hub-sub">One URL · switch brands · Oct 20 Published 8/8 (live)</div>
+      </div>
+      <div class="brand-switcher" role="tablist" aria-label="Brand calendars">
+<button type="button" class="brand-pill" data-brand="vas" aria-pressed="false" title="Vail Airport Storage">VAS</button>
+<button type="button" class="brand-pill" data-brand="elk" aria-pressed="false" title="Elk Mountain">Elk</button>
+<button type="button" class="brand-pill" data-brand="estes" aria-pressed="false" title="Estes Park">Estes</button>
+<button type="button" class="brand-pill" data-brand="eagle" aria-pressed="false" title="Eagle Canopy">Eagle</button>
+<button type="button" class="brand-pill" data-brand="snowmass" aria-pressed="false" title="Snowmass">Snowmass</button>
+<button type="button" class="brand-pill" data-brand="discount" aria-pressed="false" title="Discount">Discount</button>
+<button type="button" class="brand-pill" data-brand="slate" aria-pressed="false" title="Slate River">Slate</button>
+<button type="button" class="brand-pill" data-brand="parachute" aria-pressed="false" title="Parachute">Parachute</button>
+<button type="button" class="brand-pill" data-brand="delta" aria-pressed="false" title="Delta Self Storage">Delta</button>
+<button type="button" class="brand-pill" data-brand="bigsky" aria-pressed="false" title="Big Sky Storage">Big Sky</button>
+</div>
+    </div>
+  </header>
+  <iframe id="brand-frame" title="Brand calendar" src="https://irp.cdn-website.com/500fb4fb/files/uploaded/ludlow-cal-vas-2026-60ed84b2.html" style="width:100%;border:0;min-height:100vh"></iframe>
+<script>
+
+(function () {
+  var KEY = "ludlow.calendars.hub.brand";
+  var BRANDS = {
+  "vas": "https://irp.cdn-website.com/500fb4fb/files/uploaded/ludlow-cal-vas-2026-60ed84b2.html",
+  "elk": "https://irp.cdn-website.com/500fb4fb/files/uploaded/ludlow-cal-elk-2026-26e50789.html",
+  "estes": "https://irp.cdn-website.com/500fb4fb/files/uploaded/ludlow-cal-estes-2026-48052247.html",
+  "eagle": "https://irp.cdn-website.com/500fb4fb/files/uploaded/ludlow-cal-eagle-2026-94aeda59.html",
+  "snowmass": "https://irp.cdn-website.com/500fb4fb/files/uploaded/ludlow-cal-snowmass-2026-f3bc493d.html",
+  "discount": "https://irp.cdn-website.com/500fb4fb/files/uploaded/ludlow-cal-discount-2026-e30a7a91.html",
+  "slate": "https://irp.cdn-website.com/500fb4fb/files/uploaded/ludlow-cal-slate-2026-473efc19.html",
+  "parachute": "https://irp.cdn-website.com/500fb4fb/files/uploaded/ludlow-cal-parachute-2026-5371292d.html",
+  "delta": "https://irp.cdn-website.com/500fb4fb/files/uploaded/ludlow-cal-delta-2026.html",
+  "bigsky": "https://irp.cdn-website.com/500fb4fb/files/uploaded/ludlow-cal-bigsky-2026-cc5e6b14.html"
+};
+  var DEFAULT = "vas";
+  var pills = Array.prototype.slice.call(document.querySelectorAll(".brand-pill"));
+  var frame = document.getElementById("brand-frame");
+
+  function forceScrollTop() {
+    try { window.scrollTo(0, 0); } catch (e) {}
+    try {
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
+    } catch (e2) {}
+  }
+
+  function show(brand) {
+    if (!BRANDS[brand]) brand = DEFAULT;
+    pills.forEach(function (btn) {
+      var on = btn.getAttribute("data-brand") === brand;
+      btn.setAttribute("aria-pressed", on ? "true" : "false");
+    });
+    var src = BRANDS[brand];
+    if (frame.getAttribute("src") !== src) {
+      frame.setAttribute("src", src);
+    }
+    try { localStorage.setItem(KEY, brand); } catch (e) {}
+    if (location.hash !== "#" + brand) {
+      history.replaceState(null, "", "#" + brand);
+    }
+    forceScrollTop();
+    requestAnimationFrame(function () {
+      forceScrollTop();
+      setTimeout(forceScrollTop, 0);
+    });
+  }
+
+  pills.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      show(btn.getAttribute("data-brand"));
+    });
+  });
+
+  window.addEventListener("hashchange", function () {
+    var h = (location.hash || "").replace(/^#/, "");
+    if (h && BRANDS[h]) show(h);
+  });
+
+  var fromHash = (location.hash || "").replace(/^#/, "");
+  var fromStore = null;
+  try { fromStore = localStorage.getItem(KEY); } catch (e) {}
+  show(fromHash || fromStore || DEFAULT);
+})();
+
+</script>
+</body>
+</html>
