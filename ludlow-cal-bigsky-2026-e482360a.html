@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Big Sky Storage | Blog Content Calendar 2026</title>
+<meta name="description" content="Big Sky Storage rest-of-2026 weekly blog calendar. Gallatin Canyon / Big Sky MT. Opens December 1, 2026; reservations open now."/>
+<style>
+
+:root { --bg:#f4f4f1; --ink:#0a0a0a; --muted:#5c5c5c; --line:#e4e4e0; --card:#fff; --accent:#ff5a1f; --live:#0f766e; }
+* { box-sizing:border-box; }
+body { margin:0; font-family:Inter,"Segoe UI",system-ui,sans-serif; color:var(--ink); background:var(--bg); line-height:1.5; }
+a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:underline; }
+.topbar { background:var(--ink); color:#fff; padding:14px 24px; display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap; }
+.topbar .brand { font-weight:800; } .topbar .tag { font-size:0.78rem; opacity:0.75; text-transform:uppercase; letter-spacing:0.08em; }
+.hero-banner { background:var(--ink); color:#fff; padding:48px 24px 56px; }
+.hero-banner .inner { max-width:1080px; margin:0 auto; }
+.eyebrow { display:inline-block; background:var(--accent); font-weight:700; font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em; padding:6px 10px; border-radius:4px; margin-bottom:16px; }
+.hero-banner h1 { margin:0 0 14px; font-size:clamp(2rem,4vw,3.1rem); line-height:1.08; letter-spacing:-0.03em; max-width:20ch; }
+.hero-banner p { margin:0; max-width:62ch; color:#d4d4d4; font-size:1.05rem; }
+.stats { display:flex; flex-wrap:wrap; gap:10px; margin-top:28px; }
+.stat { border:1px solid #333; border-radius:999px; padding:8px 14px; font-size:0.85rem; color:#eee; }
+.stat strong { color:var(--accent); }
+.wrap { max-width:1080px; margin:0 auto; padding:28px 20px 72px; }
+.panel-grid { display:grid; grid-template-columns:1.15fr 0.85fr; gap:16px; margin:-36px 0 28px; }
+@media (max-width:820px) { .panel-grid { grid-template-columns:1fr; margin-top:20px; } }
+.panel { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:22px 24px; }
+.panel h2 { margin:0 0 12px; font-size:1.05rem; } .panel ul { margin:0; padding-left:1.1rem; color:var(--muted); } .panel li { margin:8px 0; }
+.month { margin:28px 0 12px; font-size:0.8rem; font-weight:800; text-transform:uppercase; letter-spacing:0.12em; color:var(--muted); }
+.month.sub { margin-top:8px; font-size:0.72rem; color:#888; }
+.feed { display:flex; flex-direction:column; gap:18px; }
+.post { display:grid; grid-template-columns:280px 1fr; background:var(--card); border:1px solid var(--line); border-radius:18px; overflow:hidden; }
+.post.live { border-color:#99f6e4; }
+@media (max-width:720px) { .post { grid-template-columns:1fr; } }
+.hero-wrap { position:relative; background:#111; min-height:180px; }
+.hero-wrap img { display:block; width:100%; height:100%; min-height:180px; object-fit:cover;  cursor:zoom-in; }
+.hero-ph { position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; color:#fff; font-weight:800; text-align:center; padding:16px; gap:6px; }
+.hero-ph .ph-label { font-size:0.7rem; letter-spacing:0.12em; text-transform:uppercase; opacity:0.85; }
+.hero-ph .ph-style { font-size:1.35rem; letter-spacing:0.04em; }
+.hero-ph .ph-hint { font-size:0.75rem; font-weight:600; opacity:0.75; max-width:22ch; }
+.week-badge { position:absolute; left:12px; bottom:12px; background:var(--accent); color:#fff; font-size:0.75rem; font-weight:700; padding:6px 10px; border-radius:6px; z-index:2; }
+.live-badge { background:#fff; color:var(--live); }
+.body { padding:20px 22px 22px; }
+.cat { display:inline-block; background:#111; color:#fff; font-size:0.72rem; font-weight:700; text-transform:uppercase; letter-spacing:0.06em; padding:5px 9px; border-radius:999px; margin-bottom:10px; }
+.style { display:inline-block; margin-left:6px; background:#fff1eb; color:#9a3412; border:1px solid #ffd2bf; font-size:0.68rem; font-weight:800; text-transform:uppercase; letter-spacing:0.06em; padding:4px 8px; border-radius:999px; margin-bottom:10px; }
+.style.lego { background:#fffbeb; color:#92400e; border-color:#fcd34d; }
+.style.gta { background:#f5f3ff; color:#5b21b6; border-color:#c4b5fd; }
+.post.live .cat { background:var(--live); }
+.body h2 { margin:0 0 12px; font-size:1.2rem; line-height:1.25; } .body h2 a { color:inherit; }
+.label { display:inline-block; font-size:0.68rem; font-weight:800; text-transform:uppercase; letter-spacing:0.08em; color:var(--accent); margin-right:6px; }
+.kw,.meta { margin:0 0 8px; color:var(--muted); font-size:0.9rem; } .angle { margin:10px 0 0; font-size:0.92rem; }
+footer { margin-top:36px; text-align:center; color:var(--muted); font-size:0.85rem; }
+.skip { margin-top:28px; padding:18px 20px; border-radius:14px; background:#fff; border:1px dashed var(--line); color:var(--muted); font-size:0.9rem; }
+
+
+.status-badge { position:absolute; right:12px; top:12px; font-size:0.68rem; font-weight:800; text-transform:uppercase; letter-spacing:0.06em; padding:5px 9px; border-radius:999px; z-index:2; }
+.draft-badge { background:#ccfbf1; color:#0f766e; }
+.planned-badge { background:#fef3c7; color:#a16207; }
+.nap { margin-top:18px; font-size:0.9rem; color:#d4d4d4; }
+.nap strong { color:#fff; }
+.nap a { color:#fff; }
+.hero-wrap .hero-ph { position:absolute; inset:0; }
+footer { margin-top:36px; text-align:center; color:var(--muted); font-size:0.85rem; }
+
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="brand">Big Sky Storage</div>
+  <div class="tag">Content Calendar · Rest of 2026</div>
+</div>
+<section class="hero-banner"><div class="inner">
+<span class="eyebrow">Ludlow Property Group</span>
+<h1>Blog calendar for Gallatin Canyon open</h1>
+<p>Weekly plan from Sep 22 to Dec 29, 2026 for Big Sky Storage. Facility opens December 1, 2026; reservations are open now. Never claim open for move-in before doors. Hero mix: Lego + GTA VI (Sep 22/29 heroes live; later weeks still placeholders). CTAs go to Big Sky Storage reserve and phone, not Eagle Canopy.</p>
+<div class="stats">
+<span class="stat"><strong>3</strong> published</span>
+<span class="stat"><strong>0</strong> draft ready</span>
+<span class="stat"><strong>12</strong> planned</span>
+<span class="stat"><strong>8</strong> Lego · <strong>7</strong> GTA VI</span>
+<span class="stat">Big Sky · Gallatin Canyon</span>
+<span class="stat">Updated Sep 21, 2026 · openers live</span>
+</div>
+<p class="nap"><strong>NAP:</strong> Big Sky Storage · 204 Blacksmith Loop, Gallatin Gateway, MT 59730 · <a href="tel:+14066239410">(406) 623-9410</a> · <a href="https://www.bigskystorage.com/" style="color:var(--accent)">www.bigskystorage.com</a></p>
+</div></section>
+<div class="wrap">
+<div class="panel-grid">
+<section class="panel"><h2>Strategy</h2><ul>
+<li>~55% local / seasonal · ~30% B2B · ~15% education with local CTA</li>
+<li>Pre-open framing through November: reserve now; move-in starts at open</li>
+<li>Sep 22 + Sep 29 catch-up Published live (2026-09-29); first three openers also live</li>
+<li>Hero mix: Lego lifestyle; GTA VI loading-screen characters (no weapons). Placeholders only until assets exist</li>
+<li>Question-led topics LLMs can cite; money pages stay canonical</li>
+</ul></section>
+<section class="panel"><h2>CTA cheat sheet</h2><ul>
+<li><strong>Reserve / Rent:</strong> <a href="https://www.bigskystorage.com/#RentNow">https://www.bigskystorage.com/#RentNow</a></li>
+<li><strong>Checkout reserve:</strong> <a href="https://www.bigskystorage.com/checkout">https://www.bigskystorage.com/checkout</a></li>
+<li><strong>Phone:</strong> <a href="tel:+14066239410">(406) 623-9410</a></li>
+<li><strong>Heated story:</strong> /heated-storage-big-sky-mt</li>
+<li><strong>Size guide:</strong> /size-guide</li>
+<li><strong>Contact:</strong> /contact</li>
+<li>Never send CTAs to Eagle Canopy</li>
+</ul></section>
+</div>
+<div class="feed">
+<div class="month">September 2026</div>
+<article class="post live" id="week-01" data-status="live" data-hero="gta">
+<div class="hero-wrap"><img class="hero" src="https://irp.cdn-website.com/500fb4fb/dms3rep/multi/hero-sep22-reserve-gta.png" alt="GTA VI style hero · reserve before Big Sky Storage opens" loading="lazy" data-hero-key="week-01" /><span class="week-badge">Sep 22</span><span class="status-badge live-badge">Published</span></div>
+<div class="body">
+<span class="cat">Seasonal / Pre-open</span><span class="style gta">GTA VI</span>
+<h2><a href="https://www.bigskystorage.com/reserve-before-big-sky-storage-opens" target="_blank" rel="noopener">Reserve Before Big Sky Storage Opens: What to Lock In Now</a></h2>
+<p class="kw"><span class="label">URL</span> <a href="https://www.bigskystorage.com/reserve-before-big-sky-storage-opens" target="_blank" rel="noopener">/reserve-before-big-sky-storage-opens</a></p>
+<p class="kw"><span class="label">Keyword</span> reserve storage big sky mt / big sky storage opening december</p>
+<p class="meta"><span class="label">CTA</span> https://www.bigskystorage.com/#RentNow + call (406) 623-9410</p>
+<p class="meta"><span class="label">Hero</span> GTA VI · live CDN</p>
+<p class="angle"><span class="label">Angle</span> Pre-open reservation timing for Gallatin Canyon. Facility opens December 1, 2026; reservations are open now. Do not claim move-in is available yet.</p>
+<p class="meta"><span class="label">Notes</span> post live · Published /reserve-before-big-sky-storage-opens · catch-up 2026-09-29</p>
+</div>
+</article>
+<article class="post live" id="week-02" data-status="live" data-hero="lego">
+<div class="hero-wrap"><img class="hero" src="https://irp.cdn-website.com/500fb4fb/dms3rep/multi/hero-sep29-drive-time-lego.png" alt="Lego style hero · Big Sky Storage drive time from Town Center and Bozeman" loading="lazy" data-hero-key="week-02" /><span class="week-badge">Sep 29</span><span class="status-badge live-badge">Published</span></div>
+<div class="body">
+<span class="cat">Drive-time</span><span class="style lego">Lego</span>
+<h2><a href="https://www.bigskystorage.com/how-far-big-sky-storage-from-town-center-bozeman" target="_blank" rel="noopener">How Far Is Big Sky Storage from Town Center and the Bozeman Corridor?</a></h2>
+<p class="kw"><span class="label">URL</span> <a href="https://www.bigskystorage.com/how-far-big-sky-storage-from-town-center-bozeman" target="_blank" rel="noopener">/how-far-big-sky-storage-from-town-center-bozeman</a></p>
+<p class="kw"><span class="label">Keyword</span> storage near big sky town center / big sky to bozeman storage drive time</p>
+<p class="meta"><span class="label">CTA</span> https://www.bigskystorage.com/#RentNow + call (406) 623-9410</p>
+<p class="meta"><span class="label">Hero</span> Lego · live CDN</p>
+<p class="angle"><span class="label">Angle</span> Drive-time guide from Big Sky Town Center, Gallatin Gateway, Four Corners, and Bozeman corridor travelers to 204 Blacksmith Loop.</p>
+<p class="meta"><span class="label">Notes</span> post live · Published /how-far-big-sky-storage-from-town-center-bozeman · ship day 2026-09-29</p>
+</div>
+</article>
+<div class="month">October 2026</div>
+<article class="post live" id="week-03" data-status="live" data-hero="lego">
+<div class="hero-wrap"><img class="hero" src="https://irp.cdn-website.com/500fb4fb/dms3rep/multi/opt/hero-01-size-lego-640w.png" alt="LEGO hero · size guide · Big Sky, MT" loading="lazy" data-hero-key="week-03" /><span class="week-badge">Oct 6</span><span class="status-badge live-badge">Published</span></div>
+<div class="body">
+<span class="cat">Education / Size</span><span class="style lego">Lego</span>
+<h2><a href="https://www.bigskystorage.com/what-size-storage-unit-big-sky-mt" target="_blank" rel="noopener">What Size Storage Unit Do You Need in Big Sky, MT?</a></h2>
+<p class="kw"><span class="label">URL</span> <a href="https://www.bigskystorage.com/what-size-storage-unit-big-sky-mt" target="_blank" rel="noopener">/what-size-storage-unit-big-sky-mt</a></p>
+
+<p class="kw"><span class="label">Keyword</span> what size storage unit do i need / storage unit sizes big sky mt</p>
+<p class="meta"><span class="label">CTA</span> https://www.bigskystorage.com/checkout + call (406) 623-9410</p>
+<p class="meta"><span class="label">Hero</span> Lego · live CDN</p>
+<p class="angle"><span class="label">Angle</span> Highest-volume size guide localized to Big Sky condos, canyon homes, skis, bikes, and seasonal gear. Units 6x5 through 12x45. Helps readers reserve the right size before the December 1 opening.</p>
+<p class="meta"><span class="label">Notes</span> post live · Published /what-size-storage-unit-big-sky-mt</p>
+</div>
+</article>
+<article class="post live" id="week-04" data-status="live" data-hero="lego">
+<div class="hero-wrap"><img class="hero" src="https://irp.cdn-website.com/500fb4fb/dms3rep/multi/opt/hero-03-heated-lego-640w.png" alt="LEGO hero · heated vs climate-controlled" loading="lazy" data-hero-key="week-04" /><span class="week-badge">Oct 13</span><span class="status-badge live-badge">Published</span></div>
+<div class="body">
+<span class="cat">Education / Product</span><span class="style lego">Lego</span>
+<h2><a href="https://www.bigskystorage.com/heated-vs-climate-controlled-montana" target="_blank" rel="noopener">Do You Need Heated or Climate-Controlled Storage in Montana?</a></h2>
+<p class="kw"><span class="label">URL</span> <a href="https://www.bigskystorage.com/heated-vs-climate-controlled-montana" target="_blank" rel="noopener">/heated-vs-climate-controlled-montana</a></p>
+
+<p class="kw"><span class="label">Keyword</span> do i need climate controlled storage / is heated storage worth it montana</p>
+<p class="meta"><span class="label">CTA</span> https://www.bigskystorage.com/heated-storage-big-sky-mt + https://www.bigskystorage.com/#RentNow</p>
+<p class="meta"><span class="label">Hero</span> Lego · live CDN</p>
+<p class="angle"><span class="label">Angle</span> Decision guide for Montana winters vs the existing narrative heated post. All 199 Big Sky Storage units heated in winter and cooled in summer.</p>
+<p class="meta"><span class="label">Notes</span> post live · Published /heated-vs-climate-controlled-montana</p>
+</div>
+</article>
+<article class="post live" id="week-05" data-status="live" data-hero="gta">
+<div class="hero-wrap"><img class="hero" src="https://irp.cdn-website.com/500fb4fb/dms3rep/multi/opt/hero-02-rv-gta6-640w.png" alt="GTA 6 style hero · RV / boat / trailer" loading="lazy" data-hero-key="week-05" /><span class="week-badge">Oct 20</span><span class="status-badge live-badge">Published</span></div>
+<div class="body">
+<span class="cat">Vehicle / Product</span><span class="style gta">GTA VI</span>
+<h2><a href="https://www.bigskystorage.com/rv-boat-trailer-storage-big-sky-mt" target="_blank" rel="noopener">RV, Boat and Trailer Storage Near Big Sky, MT: Heated Drive-Up in Gallatin Canyon</a></h2>
+<p class="kw"><span class="label">URL</span> <a href="https://www.bigskystorage.com/rv-boat-trailer-storage-big-sky-mt" target="_blank" rel="noopener">/rv-boat-trailer-storage-big-sky-mt</a></p>
+
+<p class="kw"><span class="label">Keyword</span> how much is rv storage / rv storage bozeman / trailer storage big sky</p>
+<p class="meta"><span class="label">CTA</span> https://www.bigskystorage.com/#RentNow + call (406) 623-9410</p>
+<p class="meta"><span class="label">Hero</span> GTA VI · live CDN</p>
+<p class="angle"><span class="label">Angle</span> Product differentiator: heated drive-up bays up to 12x45 for RVs, boats, trailers, and sleds in Gallatin Canyon. Reserve large bays early.</p>
+<p class="meta"><span class="label">Notes</span> post live · Published /rv-boat-trailer-storage-big-sky-mt</p>
+</div>
+</article>
+<article class="post live" id="week-06" data-status="live" data-hero="gta">
+<div class="hero-wrap"><img class="hero" src="https://irp.cdn-website.com/500fb4fb/dms3rep/multi/hero-oct27-lockleave-bigsky-gta.jpg" alt="Ski Season Lock-and-Leave Storage for Big Sky Condos and Second Homes" loading="lazy" data-hero-key="week-06" /><span class="week-badge">Oct 27</span><span class="status-badge live-badge">Published</span></div>
+<div class="body">
+<span class="cat">Seasonal / Second home</span><span class="style gta">GTA VI</span>
+<h2><a href="https://www.bigskystorage.com/ski-season-lock-and-leave-storage-big-sky" target="_blank" rel="noopener">Ski Season Lock-and-Leave Storage for Big Sky Condos and Second Homes</a></h2> <p class="kw"><span class="label">URL</span> <a href="https://www.bigskystorage.com/ski-season-lock-and-leave-storage-big-sky" target="_blank" rel="noopener">/ski-season-lock-and-leave-storage-big-sky</a></p>
+<p class="kw"><span class="label">Keyword</span> ski season storage big sky / second home storage gallatin canyon</p>
+<p class="meta"><span class="label">CTA</span> https://www.bigskystorage.com/#RentNow + call (406) 623-9410</p>
+<p class="meta"><span class="label">Hero</span> GTA VI · live CDN</p>
+<p class="angle"><span class="label">Angle</span> Lock-and-leave playbook for ski-season absences: furniture overflow, sports gear, and owner closets that do not fit canyon floor plans.</p>
+<p class="meta"><span class="label">Notes</span> Opens into peak ski season. CTA reserve before popular sizes go.</p>
+</div>
+</article>
+<div class="month">November 2026</div>
+<article class="post" id="week-07" data-status="planned" data-hero="lego">
+<div class="hero-wrap" style="background:#0f172a">
+<div class="hero-ph" aria-hidden="true">
+<span class="ph-label">Hero placeholder</span>
+<span class="ph-style" style="color:#94a3b8">Lego</span>
+<span class="ph-hint">Asset TBD · do not use fake CDN URL</span>
+</div>
+<span class="week-badge">Nov 3</span>
+<span class="status-badge planned-badge">Planned</span>
+</div>
+<div class="body">
+<span class="cat">Local / Condo</span><span class="style lego">Lego</span>
+<h2>Condo Overflow Storage Near Big Sky Town Center</h2>
+<p class="kw"><span class="label">Keyword</span> condo storage big sky mt / storage near big sky town center</p>
+<p class="meta"><span class="label">CTA</span> https://www.bigskystorage.com/#RentNow + https://www.bigskystorage.com/size-guide</p>
+<p class="meta"><span class="label">Hero</span> Lego placeholder</p>
+<p class="angle"><span class="label">Angle</span> View-oriented condos lack storage. Map overflow use cases (bikes, skis, luggage, off-season furniture) to heated unit sizes near Town Center.</p>
+<p class="meta"><span class="label">Notes</span> Local demand from canyon housing stock. Internal link size guide and reserve.</p>
+</div>
+</article>
+<article class="post" id="week-08" data-status="planned" data-hero="gta">
+<div class="hero-wrap" style="background:#134e4a">
+<div class="hero-ph" aria-hidden="true">
+<span class="ph-label">Hero placeholder</span>
+<span class="ph-style" style="color:#5eead4">GTA VI</span>
+<span class="ph-hint">Asset TBD · do not use fake CDN URL</span>
+</div>
+<span class="week-badge">Nov 10</span>
+<span class="status-badge planned-badge">Planned</span>
+</div>
+<div class="body">
+<span class="cat">B2B / Workforce</span><span class="style gta">GTA VI</span>
+<h2>Snowmobile and Trailer Storage When Employee Housing Bans Parking</h2>
+<p class="kw"><span class="label">Keyword</span> snowmobile trailer storage big sky / employee housing trailer parking ban</p>
+<p class="meta"><span class="label">CTA</span> Call (406) 623-9410 + https://www.bigskystorage.com/#RentNow</p>
+<p class="meta"><span class="label">Hero</span> GTA VI placeholder</p>
+<p class="angle"><span class="label">Angle</span> Workforce and employer angle: housing rules that ban trailers and sleds. Heated drive-up as the compliant alternative near resort corridors.</p>
+<p class="meta"><span class="label">Notes</span> B2B outreach tone for property managers and employers. Cite parking pain without naming competitors.</p>
+</div>
+</article>
+<article class="post" id="week-09" data-status="planned" data-hero="lego">
+<div class="hero-wrap" style="background:#1e3a5f">
+<div class="hero-ph" aria-hidden="true">
+<span class="ph-label">Hero placeholder</span>
+<span class="ph-style" style="color:#7dd3fc">Lego</span>
+<span class="ph-hint">Asset TBD · do not use fake CDN URL</span>
+</div>
+<span class="week-badge">Nov 17</span>
+<span class="status-badge planned-badge">Planned</span>
+</div>
+<div class="body">
+<span class="cat">Vehicle / Seasonal</span><span class="style lego">Lego</span>
+<h2>Winter Vehicle Storage in Gallatin Canyon: Cars, Trucks, and Trailers</h2>
+<p class="kw"><span class="label">Keyword</span> winter car storage big sky / heated vehicle storage gallatin canyon</p>
+<p class="meta"><span class="label">CTA</span> https://www.bigskystorage.com/#RentNow + call (406) 623-9410</p>
+<p class="meta"><span class="label">Hero</span> Lego placeholder</p>
+<p class="angle"><span class="label">Angle</span> Winterize-or-store decision for personal vehicles and trailers when canyon cold and HOA rules collide. Heated bay vs outdoor lot framing (qualitative).</p>
+<p class="meta"><span class="label">Notes</span> Complement RV article; focus cars, trucks, utility trailers. Measure-before-reserve note.</p>
+</div>
+</article>
+<article class="post" id="week-10" data-status="planned" data-hero="gta">
+<div class="hero-wrap" style="background:#3f2a1a">
+<div class="hero-ph" aria-hidden="true">
+<span class="ph-label">Hero placeholder</span>
+<span class="ph-style" style="color:#fbbf24">GTA VI</span>
+<span class="ph-hint">Asset TBD · do not use fake CDN URL</span>
+</div>
+<span class="week-badge">Nov 24</span>
+<span class="status-badge planned-badge">Planned</span>
+</div>
+<div class="body">
+<span class="cat">Seasonal / Second home</span><span class="style gta">GTA VI</span>
+<h2>Second-Home Storage Checklist Before You Leave Big Sky for the Season</h2>
+<p class="kw"><span class="label">Keyword</span> second home storage checklist big sky / seasonal home storage montana</p>
+<p class="meta"><span class="label">CTA</span> https://www.bigskystorage.com/checkout + call (406) 623-9410</p>
+<p class="meta"><span class="label">Hero</span> GTA VI placeholder</p>
+<p class="angle"><span class="label">Angle</span> Checklist for absentee owners: what stays in the home, what goes to heated storage, and when to reserve before December travel peaks.</p>
+<p class="meta"><span class="label">Notes</span> Thanksgiving-week publish window. NAP plus reserve framing.</p>
+</div>
+</article>
+<div class="month">December 2026</div>
+<article class="post" id="week-11" data-status="planned" data-hero="lego">
+<div class="hero-wrap" style="background:#14532d">
+<div class="hero-ph" aria-hidden="true">
+<span class="ph-label">Hero placeholder</span>
+<span class="ph-style" style="color:#86efac">Lego</span>
+<span class="ph-hint">Asset TBD · do not use fake CDN URL</span>
+</div>
+<span class="week-badge">Dec 1</span>
+<span class="status-badge planned-badge">Planned</span>
+</div>
+<div class="body">
+<span class="cat">B2B / Contractor</span><span class="style lego">Lego</span>
+<h2>Contractor and Remodel Storage Along the Bozeman-Big Sky Corridor</h2>
+<p class="kw"><span class="label">Keyword</span> contractor storage big sky / remodel storage gallatin gateway</p>
+<p class="meta"><span class="label">CTA</span> Call (406) 623-9410 + https://www.bigskystorage.com/#RentNow</p>
+<p class="meta"><span class="label">Hero</span> Lego placeholder</p>
+<p class="angle"><span class="label">Angle</span> Trade and remodel staging between Bozeman jobs and Big Sky finishes. Secure heated space for tools, fixtures, and client holds.</p>
+<p class="meta"><span class="label">Notes</span> B2B phone-first CTA. Ask about bay size and access hours (24/7 gate).</p>
+</div>
+</article>
+<article class="post" id="week-12" data-status="planned" data-hero="gta">
+<div class="hero-wrap" style="background:#4c0519">
+<div class="hero-ph" aria-hidden="true">
+<span class="ph-label">Hero placeholder</span>
+<span class="ph-style" style="color:#fda4af">GTA VI</span>
+<span class="ph-hint">Asset TBD · do not use fake CDN URL</span>
+</div>
+<span class="week-badge">Dec 8</span>
+<span class="status-badge planned-badge">Planned</span>
+</div>
+<div class="body">
+<span class="cat">B2B / STR</span><span class="style gta">GTA VI</span>
+<h2>Short-Term Rental Turnover Storage for Big Sky Property Managers</h2>
+<p class="kw"><span class="label">Keyword</span> airbnb storage big sky / property manager storage gallatin canyon</p>
+<p class="meta"><span class="label">CTA</span> Call (406) 623-9410 + https://www.bigskystorage.com/contact</p>
+<p class="meta"><span class="label">Hero</span> GTA VI placeholder</p>
+<p class="angle"><span class="label">Angle</span> PM ops: extra linens, furniture swaps, owner boxes, and seasonal decor that should not live in guest-ready units.</p>
+<p class="meta"><span class="label">Notes</span> Keep Big Sky / canyon specifics. Phone for multi-unit accounts.</p>
+</div>
+</article>
+<article class="post" id="week-13" data-status="planned" data-hero="lego">
+<div class="hero-wrap" style="background:#1e1b4b">
+<div class="hero-ph" aria-hidden="true">
+<span class="ph-label">Hero placeholder</span>
+<span class="ph-style" style="color:#c4b5fd">Lego</span>
+<span class="ph-hint">Asset TBD · do not use fake CDN URL</span>
+</div>
+<span class="week-badge">Dec 15</span>
+<span class="status-badge planned-badge">Planned</span>
+</div>
+<div class="body">
+<span class="cat">Education / How-to</span><span class="style lego">Lego</span>
+<h2>How to Pack for Montana Winter Storage Without Damaging Gear</h2>
+<p class="kw"><span class="label">Keyword</span> how to pack storage unit winter / winter storage tips montana</p>
+<p class="meta"><span class="label">CTA</span> https://www.bigskystorage.com/heated-storage-big-sky-mt + https://www.bigskystorage.com/#RentNow</p>
+<p class="meta"><span class="label">Hero</span> Lego placeholder</p>
+<p class="angle"><span class="label">Angle</span> Practical packing for furniture, batteries, textiles, and sports gear headed into heated units. Ties to climate decision article.</p>
+<p class="meta"><span class="label">Notes</span> Education CTA into heated page and reserve. No fake humidity claims beyond site facts.</p>
+</div>
+</article>
+<article class="post" id="week-14" data-status="planned" data-hero="gta">
+<div class="hero-wrap" style="background:#422006">
+<div class="hero-ph" aria-hidden="true">
+<span class="ph-label">Hero placeholder</span>
+<span class="ph-style" style="color:#fdba74">GTA VI</span>
+<span class="ph-hint">Asset TBD · do not use fake CDN URL</span>
+</div>
+<span class="week-badge">Dec 22</span>
+<span class="status-badge planned-badge">Planned</span>
+</div>
+<div class="body">
+<span class="cat">Seasonal / Holiday</span><span class="style gta">GTA VI</span>
+<h2>Holiday Absentee Storage: Keep Big Sky Homes Clear While You Travel</h2>
+<p class="kw"><span class="label">Keyword</span> holiday storage big sky mt / travel storage gallatin canyon</p>
+<p class="meta"><span class="label">CTA</span> https://www.bigskystorage.com/#RentNow + call (406) 623-9410</p>
+<p class="meta"><span class="label">Hero</span> GTA VI placeholder</p>
+<p class="angle"><span class="label">Angle</span> Holiday travel clear-out for locals and second-home owners: gifts, luggage staging, and gear that should not sit in cold garages.</p>
+<p class="meta"><span class="label">Notes</span> Short seasonal piece. Reinforce 24/7 access and heated product.</p>
+</div>
+</article>
+<article class="post" id="week-15" data-status="planned" data-hero="lego">
+<div class="hero-wrap" style="background:#0f172a">
+<div class="hero-ph" aria-hidden="true">
+<span class="ph-label">Hero placeholder</span>
+<span class="ph-style" style="color:#94a3b8">Lego</span>
+<span class="ph-hint">Asset TBD · do not use fake CDN URL</span>
+</div>
+<span class="week-badge">Dec 29</span>
+<span class="status-badge planned-badge">Planned</span>
+</div>
+<div class="body">
+<span class="cat">Local / Planning</span><span class="style lego">Lego</span>
+<h2>2027 Reservation Timing: Why Big Sky Storage Units Book Before Spring</h2>
+<p class="kw"><span class="label">Keyword</span> reserve storage big sky 2027 / when to reserve storage unit montana</p>
+<p class="meta"><span class="label">CTA</span> https://www.bigskystorage.com/checkout + call (406) 623-9410</p>
+<p class="meta"><span class="label">Hero</span> Lego placeholder</p>
+<p class="angle"><span class="label">Angle</span> Year-end planning post: popular sizes and large drive-up bays go first. Encourage early 2027 reservations once the facility is operating.</p>
+<p class="meta"><span class="label">Notes</span> Close the 2026 calendar. Accurate open-state language for late December.</p>
+</div>
+</article>
+</div>
+<div class="skip"><strong>Facility note:</strong> Opens December 1, 2026 at 204 Blacksmith Loop, Gallatin Gateway, MT 59730. All units heated/climate controlled (6x5 to 12x45). 199 units. 24/7 gated access. Reservations open now via #RentNow or checkout. English only. No em dashes in copy.</div>
+<footer>Ludlow Property Group · Big Sky Storage blog calendar 2026 · Calendar HTML / CDN only (no Duda blog publish from this file)</footer>
+</div>
+</body>
+</html>
