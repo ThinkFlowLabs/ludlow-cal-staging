@@ -1,0 +1,16 @@
+name: decode-heroes
+on:
+  push:
+    paths: ['heroes-*/**.b64']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  decode:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          for f in heroes-*/*.b64; do base64 -d "$f" > "${f%.b64}"; git rm -q --cached "$f"; rm "$f"; done
+          git config user.name decode-bot; git config user.email decode-bot@users.noreply.github.com
+          git add -A heroes-*; git commit -m "decode heroes" || exit 0; git push
